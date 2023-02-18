@@ -26,7 +26,7 @@ function Materials() {
   }, []);
 
   return (
-    <div className="w-full h-full overflow-scroll flex">
+    <div className="w-full h-full flex">
       <div className="w-[70%] h-full ">
         <div className="h-[7%] w-full p-3">
           <div className="w-1/3 flex  items-center justify-between">
@@ -38,7 +38,7 @@ function Materials() {
             </div>
           </div>
         </div>
-        <div className="h-[95%] max-h-screen overflow-y-auto w-full">
+        <div className="h-[95%] w-full  overflow-y-auto">
           <table className=" w-full pl-10">
             <thead>
               <tr className="text-left">
@@ -60,7 +60,7 @@ function Materials() {
                     <td className="py-5">
                       <AiOutlineStar />
                     </td>
-                    <td className="py-5 text-[15px] font-sans font-semibold">
+                    <td className="py-5 text-[15px]font-sans font-semibold">
                       <td
                         onClick={() => {
                           setDropDown(!dropdown);
@@ -88,37 +88,37 @@ function Materials() {
                   {selectedIndex === idx && data["childData"]?.length > 0 && (
                     <tr>
                       <td colSpan={6}>
-                        <table className=" w-full pl-10">
-                          <tbody className="text-xs py-5">
+                        <table>
+                          <tbody>
                             <tr>
                               <th
                                 dangerouslySetInnerHTML={{
-                                  __html: "&nbsp;".repeat(40),
+                                  __html: "&nbsp;".repeat(2),
                                 }}
                               ></th>
                               <th
                                 dangerouslySetInnerHTML={{
-                                  __html: "&nbsp;".repeat(40),
+                                  __html: "&nbsp;".repeat(sheet1?.map(dt => dt["Name"])?.reduce((max, name) => Math.max(max, name?.length), 0)),
                                 }}
                               ></th>
                               <th
                                 dangerouslySetInnerHTML={{
-                                  __html: "&nbsp;".repeat(40),
+                                  __html: "&nbsp;".repeat(sheet1?.map(dt => dt["Variants"])?.reduce((max, name) => Math.max(max, name?.length), 0)),
                                 }}
                               ></th>
                               <th
                                 dangerouslySetInnerHTML={{
-                                  __html: "&nbsp;".repeat(40),
+                                  __html: "&nbsp;".repeat(sheet1?.map(dt => dt["Lowest Price GHC"])?.reduce((max, name) => Math.max(max, name?.length), 0)),
                                 }}
                               ></th>
                               <th
                                 dangerouslySetInnerHTML={{
-                                  __html: "&nbsp;".repeat(40),
+                                  __html: "&nbsp;".repeat(sheet1?.map(dt => dt["Highest Price GHC"])?.reduce((max, name) => Math.max(max, name?.length), 0)),
                                 }}
                               ></th>
                               <th
                                 dangerouslySetInnerHTML={{
-                                  __html: "&nbsp;".repeat(40),
+                                  __html: "&nbsp;".repeat(sheet1?.map(dt => dt["Bulk Price GHC"])?.reduce((max, name) => Math.max(max, name?.length), 0)),
                                 }}
                               ></th>
                             </tr>
@@ -127,10 +127,10 @@ function Materials() {
                                 <td className="py-5">
                                   <AiOutlineStar />
                                 </td>
-                                <td className="py-5 space-x-7">
+                                <td className="py-5">
                                   {childData["Variants"] ?? "N/A"}
                                 </td>
-                                <td className="py-2 font-bold flex items-center">
+                                <td className="py-5">
                                   {childData["Lowest Price GHC"] ?? "N/A"}
                                 </td>
                                 <td className="py-5">

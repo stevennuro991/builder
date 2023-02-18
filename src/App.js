@@ -3,9 +3,16 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Estate from "./components/Estate";
 import Materials from "./components/Materials";
 import Registration from "./components/Registration";
+import Disclaimer from "./components/Disclaimer";
+import Contact from "./components/Contact";
+import About from "./components/About";
+import { Registration1 } from "./components/Registration1";
+import Table from "./components/Table";
+
 
 function App() {
   return (
+    
     <Router>
       <Routes>
         <Route path="" element={<Layout />}>
@@ -15,11 +22,23 @@ function App() {
           path="register"
           element={<Registration/>}
         />
+         <Route
+          path="table"
+          element={<Table/>} 
+        />
+          <Route
+          path="disclaimer"
+          element={<Disclaimer/>} 
+        />
+         <Route
+          path="about"
+          element={<About/>} 
+        />
+          <Route
+          path="bldr"
+          element={<Contact/>} 
+        />
         </Route>
-        {/* <Route
-          path="register"
-          element={<Registration/>}
-        /> */}
       </Routes>
     </Router>
   );
