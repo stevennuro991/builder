@@ -23,6 +23,19 @@
 
 .right_side_wrapper {
   display: table-cell;
+  border-spacing: 10px;
+  background-color: brown;
+}
+
+.left_side_text {
+  display: table-cell;
+  border-spacing: 10px;
+  background: red;
+}
+
+.right_side_text {
+  display: table-cell;
+  border-spacing: 10px;
   background-color: brown;
 }
 
