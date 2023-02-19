@@ -1,26 +1,22 @@
-import { React } from 'react'
-import styles from './Table.css'
+import { React } from "react";
+import styles from "./Table.module.css";
 
 function Table() {
   return (
-    <div classNae={styles.wrapper}>
+    <div className={styles.wrapper}>
       <div className={styles.container}>
-        <section className={styles.data_field}>
-          <div className={styles.left_side_text}>
-            <h1>Help help</h1>
+        <div className={styles.data_fields}>
+          <div className={styles.left_side_wrapper}>
+            <h1> table 11</h1>
           </div>
-          <div className={styles.right_side_text}>
-
+          <div className={styles.right_side_wrapper}>
+            <h1>table 21</h1>
           </div>
-
-        </section>
-
+        </div>
       </div>
-      <div className={styles.divider}>
-
-      </div>
+      <div className={styles.divider}></div>
     </div>
-  )
+  );
 }
 
-export default Table
+export default Table;

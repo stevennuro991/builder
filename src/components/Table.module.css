@@ -1,0 +1,33 @@
+.wrapper {
+  flex: 1;
+  background-color: blue;
+}
+
+.container {
+  flex: 1;
+  background-color: yellow;
+}
+
+.data_fields {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 10px;
+  background-color: green;
+}
+
+.left_side_wrapper {
+  display: table-cell;
+  background: red;
+}
+
+.right_side_wrapper {
+  display: table-cell;
+  background-color: brown;
+}
+
+.divider {
+  height: 1;
+  width: "100%";
+  background-color: black;
+}
