@@ -38,22 +38,21 @@ p {
   flex-direction: row;
   display: table-cell;
   min-width: 100px;
-  color: grey;
+  color: #808080;
+  padding-left: 50px;
 }
 
 .left_side_name_text {
   flex-direction: row;
   display: table-cell;
   min-width: 100px;
-
-  padding-left: 4px;
 }
 
 .right_side_text {
   display: table-cell;
   border-spacing: 10px;
   padding-right: 20px;
-  color: #e45959;
+  color: #59e483;
 }
 
 .left_side_text_header {

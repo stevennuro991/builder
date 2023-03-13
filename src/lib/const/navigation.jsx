@@ -1,31 +1,36 @@
+import contractor from '../../assets/images/cediLogo.jpeg'
+import house from '../../assets/images/dollar.png'
+
 export const DASHBOARD_SIDEBAR_LINKS = [
     {
-        key : 'materials',
+        key: 'materials',
         label: 'Materials',
-        path : '/'
+        path: '/',
+        img: contractor
     },
     {
         key: 'estates',
-        label:'Real Estates Mskt',
-        path : "estates",
+        label: 'Real Estates Mkt',
+        path: "estates",
+        img: house
     }
 ]
 
 export const DASHBOARD_TOPBAR_LINKS = [
     {
-        key : 'disclaimer',
+        key: 'disclaimer',
         label: 'Disclaimer',
-        path : 'disclaimer'
+        path: 'disclaimer'
     },
     {
-        key : 'why bldr',
-        label: 'Why Bldr',
-        path : 'bldr'
+        key: 'why bldr',
+        label: 'Why Bldr?',
+        path: 'bldr'
     },
     {
-        key : 'about',
+        key: 'about',
         label: 'About',
-        path : 'about'
+        path: 'about'
     },
-    
+
 ]
